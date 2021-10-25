@@ -1,4 +1,4 @@
 # ignorar estos archivos
 
-/node_modules/
+/node_modules
 package-lock.json

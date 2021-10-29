@@ -8,9 +8,7 @@ body {
     "header header header"
     "jugador1 main jugador2"
     "footer footer footer";
-    background-image: url("../data/assets/playmat.jpg");
-   
-   
+    background-image: url("../data/assets/playmat.jpg"); 
 }
 
 header {

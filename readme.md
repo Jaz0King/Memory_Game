@@ -39,7 +39,7 @@ Aplicación diseñada para dispositivos móviles y de escritorio, diseñada para
 ![Maquetado](./assets/Bienvenida.png) ![Maquetado](./assets/Busqueda.png) 
 ---
 ## 6. Backlog
-![Backlog](./assets/Ora1.png) ![Backlog](./assets/Ora2.png) 
+![Backlog](./data/assets/backlog.png)
 
 ---
 ## 7. Pseudocódigo

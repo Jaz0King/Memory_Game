@@ -8,47 +8,45 @@ body {
     "header header header"
     "jugador1 main jugador2"
     "footer footer footer";
-    background-color: rgb(67, 31, 100);
+    background-image: url("../data/assets/playmat.jpg");
+   
    
 }
 
 header {
     grid-area: header;
-    background-color: aqua;
+    background-color: transparent;
 }
 
 #jugador1 {
     grid-area: jugador1;
-    background-color: rgb(0, 140, 255);
+    background-color: transparent;
 }
 
 #jugador2 {
     grid-area: jugador2;
-    background-color: rgb(0, 140, 255);
+    background-color: transparent;
+    border: 1px;
 }
 
 main {
     grid-area: main;
-    background-color: rgb(0, 255, 179);
+    background-color: transparent;
     display: flex;
     flex-wrap: wrap;
     gap: 1em 1em;
     justify-content: center;
 }
 
-div {
-    background-color: rgb(217, 255, 0);
+#card {
+    background-image: url("../data/assets/yugi.jpg");
+    background-size: cover;
     width: 10em;
-    height: 10em;
-    border-radius: 5em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 0.1em;
-    border-color: black;
+    height: 15em;
+    border-radius: .5em;
 }
 
 footer {
     grid-area: footer;
-    background-color: rgb(102, 93, 93);
+    background-color: transparent;
 }

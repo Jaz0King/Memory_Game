@@ -37,13 +37,19 @@ main {
 }
 
 #card {
-    background-image: url("../data/assets/yugi.jpg");
     background-size: cover;
-    width: 10em;
-    height: 15em;
+    width: 5em;
+    height: 8em;
     border-radius: .5em;
 }
 
+ .back, .front {
+    background-size: cover;
+    width: 5em;
+    height: 8em;
+    border-radius: .5em;
+ }
+ 
 footer {
     grid-area: footer;
     background-color: transparent;

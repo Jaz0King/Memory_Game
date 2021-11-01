@@ -36,16 +36,19 @@ Aplicación diseñada para dispositivos móviles y de escritorio, diseñada para
 
 ---
 ## 5. Maquetado
-![Maquetado](./assets/Bienvenida.png) ![Maquetado](./assets/Busqueda.png) 
+![Maquetado](./data/assets/Maquetado.png) 
+
 ---
 ## 6. Backlog
 ![Backlog](./data/assets/backlog.png)
 
 ---
 ## 7. Pseudocódigo
+
+
 ---
 # ReadMe
 
 ---
 
-> This Readme should be replaced with the project documentation following the SDLC procedures for Agile Software Development Lyfe Cycle.
+

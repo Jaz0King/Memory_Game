@@ -1,0 +1,52 @@
+body {
+    display: grid;
+    width: auto;
+    height: 100vh;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 0.5fr 3fr 0.3fr;
+    grid-template-areas:
+    "header header header"
+    "jugador1 main jugador2"
+    "footer footer footer";
+    background-image: url("../data/assets/playmat.jpg");
+   
+   
+}
+
+header {
+    grid-area: header;
+    background-color: transparent;
+}
+
+#jugador1 {
+    grid-area: jugador1;
+    background-color: transparent;
+}
+
+#jugador2 {
+    grid-area: jugador2;
+    background-color: transparent;
+    border: 1px;
+}
+
+main {
+    grid-area: main;
+    background-color: transparent;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em 1em;
+    justify-content: center;
+}
+
+#card {
+    background-image: url("../data/assets/yugi.jpg");
+    background-size: cover;
+    width: 10em;
+    height: 15em;
+    border-radius: .5em;
+}
+
+footer {
+    grid-area: footer;
+    background-color: transparent;
+}

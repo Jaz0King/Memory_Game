@@ -1,0 +1,126 @@
+{
+    "Memorama": 
+    [
+        {"carta": "Exodia The ForbIden One", 
+        "cara": "../data/assets/exodia.jpg",
+        "Id": "1",
+        "contraCara": "../data/assets/yugi.jpg"},
+    
+        {"carta": "Exodia The ForbIden One", 
+        "cara": "../data/assets/exodia.jpg",
+        "Id": "2",
+        "contraCara": "../data/assets/yugi.jpg"},
+        
+        {"carta": "Slifer The Dragon of The Sky", 
+        "cara": "../data/assets/slifer.jpg",
+        "Id": "3",
+        "contraCara": "../data/assets/yugi.jpg"},
+
+        {"carta": "Slifer The Dragon of The Sky", 
+        "cara": "../data/assets/slifer.jpg",
+        "Id": "4",
+        "contraCara": "../data/assets/yugi.jpg"},
+
+        {"carta": "Obelisk The Tormentor", 
+        "cara": "../data/assets/obelisk.jpg",
+        "Id": "5",
+        "contraCara": "../data/assets/yugi.jpg"},
+
+        {"carta": "Obelisk The Tormentor", 
+        "cara": "../data/assets/obelisk.jpg",
+        "Id": "6",
+        "contraCara": "../data/assets/yugi.jpg"},
+
+        {"carta": "Rá The Winged God Dragon", 
+        "cara": "../data/assets/ra.jpg",
+        "Id": "7",
+        "contraCara": "../data/assets/yugi.jpg"},
+
+        {"carta": "Rá The Winged God Dragon", 
+        "cara": "../data/assets/ra.jpg",
+        "Id": "8",
+        "contraCara": "../data/assets/yugi.jpg"},
+
+        {"carta": "Dark Hole", 
+        "cara": "../data/assets/hole.jpg",
+        "Id": "9",
+        "contraCara": "../data/assets/yugi.jpg"},
+
+        {"carta": "Dark Hole", 
+        "cara": "../data/assets/hole.jpg",
+        "Id": "10",
+        "contraCara": "../data/assets/yugi.jpg"},
+    
+        {"carta": "Monster Reborn", 
+        "cara": "../data/assets/reborn.jpg",
+        "Id": "11",
+        "contraCara": "../data/assets/yugi.jpg"},
+    
+        {"carta": "Monster Reborn", 
+        "cara": "../data/assets/reborn.jpg",
+        "Id": "12",
+        "contraCara": "../data/assets/yugi.jpg"},
+
+        {"carta": "Change of Heart", 
+        "cara": "../data/assets/cambio.jpg",
+        "Id": "13",
+        "contraCara": "../data/assets/yugi.jpg"},  
+        
+        {"carta": "Change of Heart", 
+        "cara": "../data/assets/cambio.jpg",
+        "Id": "14",
+        "contraCara": "../data/assets/yugi.jpg"},  
+    
+        {"carta": "Bottomless Tamp Hole", 
+        "cara": "../data/assets/bottomless.jpg",
+        "Id": "15",
+        "contraCara": "../data/assets/yugi.jpg"},  
+        
+        {"carta": "Bottomless Tamp Hole", 
+        "cara": "../data/assets/bottomless.jpg",
+        "Id": "16",
+        "contraCara": "../data/assets/yugi.jpg"},
+
+        {"carta": "Magic Cylinder", 
+        "cara": "../data/assets/tambor.jpg",
+        "Id": "17",
+        "contraCara": "../data/assets/yugi.jpg"},
+
+        {"carta": "Magic Cylinder", 
+        "cara": "../data/assets/tambor.jpg",
+        "Id": "18",
+        "contraCara": "../data/assets/yugi.jpg"},    
+
+        {"carta": "Crush Card Virus", 
+        "cara": "../data/assets/corona.jpg",
+        "Id": "19",
+        "contraCara": "../data/assets/yugi.jpg"},
+
+        {"carta": "Crush Card Virus", 
+        "cara": "../data/assets/corona.jpg",
+        "Id": "20",
+        "contraCara": "../data/assets/yugi.jpg"},
+
+        {"carta": "Raigeki", 
+        "cara": "../data/assets/raigeki.jpg",
+        "Id": "21",
+        "contraCara": "../data/assets/yugi.jpg"},
+            
+        {"carta": "Raigeki", 
+        "cara": "../data/assets/raigeki.jpg",
+        "Id": "22",
+        "contraCara": "../data/assets/yugi.jpg"},
+
+        {"carta": "Creator", 
+        "cara": "../data/assets/creador.png",
+        "Id": "23",
+        "contraCara": "../data/assets/yugi.jpg"},
+
+        {"carta": "Creator", 
+        "cara": "../data/assets/creador.png",
+        "Id": "24",
+        "contraCara": "../data/assets/yugi.jpg"}    
+    
+    ]
+    }
+    

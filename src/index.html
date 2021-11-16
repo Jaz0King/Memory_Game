@@ -12,6 +12,37 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
+      
+        <!-- /////////////// MODAL. /////////// -->
+        
+            <section id="startPage" class="row">
+                <div class="col-md-2 col-md-offset-5"> 
+                        <button type="button" id="launchModalButton" class="btn btn-lg" data-toggle="modal" data-target="#myModal">Let's Get Started!
+                        </button>
+                    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                        <div class="modal-dialog modal-lg" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span></button>
+                                        <h4 class="modal-title" id="myModalLabel">Names, please</h4>
+                                </div>
+                                    <div class="modal-body"> 
+                                            <form>
+                                            <label for="player1Name">Player 1: </label>
+                                            <input class="form-control" type="text" id="player1Name">
+                                            <label for="player2Name">Player 2: </label>
+                                            <input class="form-control" type="text" id="player2Name">
+                                            </form>	
+                                    </div>
+                                <div class="modal-footer"> 
+                                <img id="kaijugif" class="img img-responsive" src="../data/assets/playmat.jpg">
+                                    <button type="button" id="playButton" class="btn btn-lg" data-dismiss="modal">Let's Play!</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         <header>
             <h1>Memorama</h1>
             <h2>Juego de memoria de 2 jugadores</h2>   

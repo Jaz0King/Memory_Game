@@ -1,13 +1,9 @@
 <!DOCTYPE html>
 <html>
-
-
- <!--Modal de bienvenida y nombre de jugadores-->
-
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>Memory Game</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
@@ -16,30 +12,48 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-    <div id="game">
-        <header>
-            <h1>Memorama</h1>
-            <h2>Juego de memoria de 2 jugadores</h2>   
-        </header>
-        <section id="jugador1"><h3>Nombre del Jugador 1</h3>
-        </section>             <!--Mesa de juego en donde se mostraran las cartas-->
-        <main id="mesa">
-        </main>
-        <section id="jugador2"><h3>Nombre del Jugador 2</h3>
-        </section>
-        <footer>Créditos</footer>
-    </div>
-  </body>
+        <div id="bienvenida">
+            <div id="nombres">
+                    <video autoplay=""><source src="../data/assets/pharaon.mp4" type="video/mp4"></video>
+                      <div id="bvn">
+                        <h1>Bienvenidos</h1>
+                        <h2>¡Es hora del duelo!</h2>
+                        <p>Introduce los nombres de jugador para comenzar</p>
+                      </div>
+                <input type="text" class="form-control" id="nombre1"  autocomplete="off" spellcheck="false" placeholder="Jugador 1">
+                <input type="text" class="form-control" id="nombre2"  autocomplete="off" spellcheck="false" placeholder="Jugador 2">            
+                <button type="button" class="btn btn-primary" id="btnInicio">COMENZAR<i class="fas fa-gamepad"></i></button>
+            </div>
+        </div>
+        <div id="game">
+            <header>
+                <h1>Memorama</h1>
+                <h2>Juego de memoria de 2 jugadores</h2>   
+            </header>
+            
+            <div id="jugador1">
+            <section id="puntos1"><h3></h3>
+            </section>   
+            </div>
+                    <!--Mesa de juego en donde se mostraran las cartas-->          
+            <main id="mesa">                 
+            </main>
 
-      <!-- JavaScript Bundle with Popper -->
+            <div id="jugador2">
+            <section id="puntos2"><h3></h3>
+            </section>
+            </div>
+            <footer>Créditos</footer>
+        </div>
+    </body>
+                    <!-- JavaScript Bundle with Popper -->
       <script>
-   
         let checkClick = (carta, Id) => {
             matchCards.checkMatch(carta,Id)
-            //memory.checkMatch(Personaje, Id)
         }
-        
       </script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
       <script src="index.js" type="module" async defer></script>
+      <script src="data.js" async defer></script>
+
 </html>

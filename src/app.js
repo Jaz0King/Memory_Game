@@ -8,12 +8,12 @@ let carta2;
 let id2;  
 let puntos1 = document.getElementById("puntos1")     //Pintado del score del jugador en el html
 let puntos2 = document.getElementById("puntos2")
-soundIntro()
+
                       //-----------//>Función para volvear las cartas<//------------ //
 window.matchCards = {
     
         checkMatch:  (carta, Id) => { //booleano
-            
+            soundIntro()
             //voltear las cartas
             let flip = document.getElementById(Id + "_flip")
             flip.style.transform = "rotateY(180deg)";

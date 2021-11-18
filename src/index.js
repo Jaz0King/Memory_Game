@@ -13,8 +13,8 @@ let entrar = document.getElementById("btnInicio")  //La pantalla de Bienvenida s
 entrar.addEventListener("click", () => {
     document.getElementById("bienvenida").hidden = true
     document.getElementById("game").hidden = false
-    jugador1.innerHTML = "Jugador 1 : " + document.getElementById("nombre1").value 
-    jugador2.innerHTML = "Jugador 2 : " + document.getElementById("nombre2").value 
+    jugador1.innerHTML = "Jugador 1:  " + document.getElementById("nombre1").value 
+    jugador2.innerHTML = "Jugador 2:  " + document.getElementById("nombre2").value 
 })
  
 

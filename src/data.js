@@ -18,7 +18,7 @@ reStart();
 let iterarCartas = (data) => {
     console.log(data.Memorama)
     //Las cartas se revuelven cada que se carga el juego
-    //data.Memorama.sort(() => Math.random() - 0.5);                                     
+    data.Memorama.sort(() => Math.random() - 0.5);                                     
     for (const tarjeta of data.Memorama) {
         //console.log(tarjeta.Id)
         memorama.innerHTML += `<div class="card-container">

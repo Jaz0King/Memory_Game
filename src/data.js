@@ -31,7 +31,6 @@ let iterarCartas = (data) => {
         let portadaCard = document.getElementById(`${tarjeta.Id}`)
         portadaCard.style.backgroundImage = "url(" + caraURL + ")"
         portadaCard.style.backgroundSize = "cover"
-   
     } 
 }
 

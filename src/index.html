@@ -16,7 +16,6 @@
             <div id="nombres">
                     <video autoplay=""><source src="../data/assets/pharaon.mp4" type="video/mp4"></video>
                       <div id="bvn">
-                        <h1>Bienvenidos</h1>
                         <h2>¡Es hora del duelo!</h2>
                         <p>Introduce los nombres de jugador para comenzar</p>
                       </div>
@@ -30,23 +29,29 @@
                 <h1>Memorama</h1>
                 <h2>Juego de memoria de 2 jugadores</h2>   
             </header>
-            
-            <div id="jugador1">
-            <section id="puntos1"><h3></h3>
-            </section>   
+            <!--Tabero del jugador 1-->
+            <div id="tablero1">
+                <h3 id="jugador1"></h3>
+                <p id="puntos1">
+                </p> 
             </div>
-                    <!--Mesa de juego en donde se mostraran las cartas-->          
+            <!--Mesa de juego en donde se mostraran las cartas-->          
             <main id="mesa">                 
             </main>
-
-            <div id="jugador2">
-            <section id="puntos2"><h3></h3>
-            </section>
+             <!--Tabero del jugador 2-->
+            <div id="tablero2">
+                <h3 id="jugador2"></h3>
+                <p id="puntos2">
+                </p> 
             </div>
-            <footer>Créditos</footer>
+            <!--Créditos y contacto-->
+            <footer>
+                <button type="button" class="btn btn-primary" id="reiniciar">REINICIAR JUEGO<i class="fas fa-gamepad"></i></button>
+                <button type="button" class="btn btn-primary" id="inicio">VOLVER AL INICIO<i class="fas fa-gamepad"></i></button>
+                </footer>
         </div>
     </body>
-                    <!-- JavaScript Bundle with Popper -->
+            <!-- JavaScript Bundle with Popper -->
       <script>
         let checkClick = (carta, Id) => {
             matchCards.checkMatch(carta,Id)
@@ -54,6 +59,6 @@
       </script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
       <script src="index.js" type="module" async defer></script>
-      <script src="data.js" async defer></script>
-
+      <script src="data.js" type="module" async defer></script>
+      
 </html>

@@ -1,6 +1,6 @@
 
 //Traer la data de las cartas, del documento .json
-fetch("./data/memory.json")
+fetch("../data/memory.json")
 .then((response) => response.json())
 .then((data) => iterarCartas(data))
 .catch((err) => console.log(err))
@@ -19,9 +19,9 @@ let iterarCartas = (data) => {
         </div>
         </div>`;
 
-    let caraURL = tarjeta.cara
-    let portadaCard = document.getElementById(`${tarjeta.Id}`)
-    portadaCard.style.backgroundImage = "url(" + caraURL + ")"
-    portadaCard.style.backgroundSize = "cover"
+        let caraURL = tarjeta.cara
+        let portadaCard = document.getElementById(`${tarjeta.Id}`)
+        portadaCard.style.backgroundImage = "url(" + caraURL + ")"
+        portadaCard.style.backgroundSize = "cover"
     }
 }

@@ -1,23 +1,21 @@
 //-----------//> Eventos DOM. Obtener los valores de búsqueda para procesarlos en data.js <//------------ //
-import {reStart} from "./data.js";
-
+import {reStart} from "./data.js"; //Imortación de la función para el reinicio del juego
+import {soundIntro} from "./app.js"; //Iportación de la función para el sonido OST del inicio del juego
 
 let jugador1 = document.getElementById("jugador1")   //Pintado de los nombres del jugador en el html
 let jugador2 = document.getElementById("jugador2") 
 
-
-                         //-----------//>Función para cambiar de pantalla de bienvenida<//-----------//
-                         
+//-----------//>Función para cambiar de pantalla de bienvenida<//-----------//             
 document.getElementById("game").hidden= true;      //Pantalla de Bienvenida se muestra al cargar la página
 let entrar = document.getElementById("btnInicio")  //La pantalla de Bienvenida se oculta al dar "click" al botón y se muestra el juego
 entrar.addEventListener("click", () => {
+   soundIntro ();
     document.getElementById("bienvenida").hidden = true
     document.getElementById("game").hidden = false
     jugador1.innerHTML = "Jugador 1:  " + document.getElementById("nombre1").value 
     jugador2.innerHTML = "Jugador 2:  " + document.getElementById("nombre2").value 
 })
  
-
 let reiniciar = document.getElementById("reiniciar")
 console.log(reiniciar);
 reiniciar.addEventListener("click", () => {

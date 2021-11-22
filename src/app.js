@@ -1,19 +1,20 @@
-let click = false;    //Activación de animación con click
-let turno = true;     //Turno de jugadores
-let player1 = 0;      //Contador para puntuación de jugadores
-let player2 = 0;
-let carta1;
-let id1;
-let carta2;
-let id2;  
-let puntos1 = document.getElementById("puntos1")     //Pintado del score del jugador en el html
-let puntos2 = document.getElementById("puntos2")
-
-                      //-----------//>Función para volvear las cartas<//------------ //
-window.matchCards = {
     
+    let click = false;    //Activación de animación con click
+    let turno = true;     //Turno de jugadores
+    let player1 = 0;      //Contador para puntuación de jugadores
+    let player2 = 0;
+    let carta1;
+    let id1;
+    let carta2;
+    let id2;  
+    let puntos1 = document.getElementById("puntos1")     //Pintado del score del jugador en el html
+    let puntos2 = document.getElementById("puntos2")
+    
+
+//---------------------------------//>Función para volvear las cartas<//----------------------------//
+window.matchCards = {
         checkMatch:  (carta, Id) => { //booleano
-            soundIntro()
+            //soundIntro()
             //voltear las cartas
             let flip = document.getElementById(Id + "_flip")
             flip.style.transform = "rotateY(180deg)";
@@ -37,7 +38,7 @@ window.matchCards = {
                             document.getElementById("puntos2").innerHTML = player2;
                             comparar(player1, player2);
                         }
-                        alert("¡BIEN ECHO! Es un Match continúa tu turno");
+                        alert("¡BIEN HECHO! Es un Match, vuelves a tirar");
                     }else{
                         soundNoMatch()
                         setTimeout(() => {
@@ -47,7 +48,7 @@ window.matchCards = {
                         reflip.style.transform = "";
                         //console.log(carta, Id)
                         }, 1500);
-                            if(turno){             //Cambiar turno del jugador si no hace match
+                            if(turno){         //-------Cambiar turno del jugador si no hace match
                                 turno = false;
                             }else{
                                 turno = true;
@@ -57,6 +58,7 @@ window.matchCards = {
       }
 }
 
+//Exportación de valores del score
 export let reScore = () => {
     console.log(puntos1,puntos2)
     puntos1 = "";
@@ -65,37 +67,37 @@ export let reScore = () => {
     document.getElementById("puntos2").innerHTML = puntos2;
 }
 
-//Función para activar los sonidos
+//Funciones para activar los sonidos
 //Sonido de No Match
     function soundMatch () {
         const audioMatch = document.getElementById("matchSound")
-        audioMatch.volume = 0.3;
+        audioMatch.volume = 0.8;
         audioMatch.play()
    }
-
 //Sonido de No Match
     function soundNoMatch () {
         const audioNoMatch = document.getElementById("noMatchSound")
-        audioNoMatch.volume = 0.3;
+        audioNoMatch.volume = 0.8;
         audioNoMatch.play()
    }
-
 //Sonido de Intro 
-    function  soundIntro () {
+
+export function  soundIntro () {
         const audioFondo = document.getElementById("introSound")
-        audioFondo.volume = 0.03;
+        audioFondo.volume = 0.1;
         audioFondo.loop = true
         audioFondo.play()
+        
     }
+
+
 //Sonido Ganador
     function ganador () {
         const audioGanador = document.getElementById("ganaSound")
-        audioGanador.volume = 0.5;
+        audioGanador.volume = 0.6;
         audioGanador.play()
     }
-
-
-   // Funcion para que aprezca un alert para el ganador 
+//Función de alert y sonido para el ganador
     function comparar (puntos1, puntos2) {
         setTimeout(() => {
            if (puntos1 + puntos2 == 12) {
@@ -107,8 +109,11 @@ export let reScore = () => {
                    if (puntos1 < puntos2) {
                        ganador()
                        alert(`¡Felicidades!  ${document.getElementById("nombre2").value}, ¡Eres el mejor Duelista!`)
-                       
                    }
+               }
+
+               if (puntos1 == puntos2){
+                   alert(`¡Es un empate! vuelvan a jugar para definir un ganador, 2 de 3.`)
                }
            }
         },500)
